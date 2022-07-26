@@ -9,7 +9,7 @@ public class Cube : MonoBehaviour
 
     void Start()
     {
-        for (itemPos.z = 10.0f; itemPos.z < 105.0f; itemPos.z += 5.0f) 
+        for (itemPos.z = 10.0f; itemPos.z <= 105.0f; itemPos.z += 5.0f) 
         {
             Instantiate(cube, itemPos, Quaternion.identity);
         }
@@ -20,5 +20,4 @@ public class Cube : MonoBehaviour
         
     }
 
-    
 }

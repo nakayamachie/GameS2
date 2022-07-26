@@ -21,7 +21,11 @@ public class Sphere : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Item")
-        Destroy(collision.gameObject);
+        {
+            Score._score += 10; 
+            Destroy(collision.gameObject);
+        }
+        
     }
 
 }
